@@ -1,24 +1,12 @@
 #!groovy
 
 node {
+ 
+    def HUB_ORG=env.HUB_ORG_DH 
 
-    def BUILD_NUMBER=env.BUILD_NUMBER
-    def RUN_ARTIFACT_DIR="tests/${BUILD_NUMBER}"
-    def SFDC_USERNAME
-
-    def HUB_ORG=env.HUB_ORG_DH
-    def SFDC_HOST = env.SFDC_HOST_DH
-    def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
-    def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY_DH
-
-    println '===================================1' 
-    println 'KEY IS' 
-    println 'JWT_KEY_CRED_ID: ' 	   + JWT_KEY_CRED_ID
-    println 'HUB_ORG: '         	   + HUB_ORG
-    println 'SFDC_HOST: '       	   + SFDC_HOST
-    println 'CONNECTED_APP_CONSUMER_KEY: ' + CONNECTED_APP_CONSUMER_KEY
-    println '===================================2' 
-	
+    println '===================================1'  
+    println 'HUB_ORG: '         	   + HUB_ORG 
+    println '===================================2'  
 	
     def SF_CONSUMER_KEY=env.SF_CONSUMER_KEY
     def SF_USERNAME=env.SF_USERNAME
