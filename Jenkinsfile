@@ -11,10 +11,10 @@ node {
     SF_CONSUMER_KEY = env.CONNECTED_APP_CONSUMER_KEY
     SF_USERNAME = env.HUB_ORG
     SERVER_KEY_CREDENTALS_ID = env.JWT_KEY_CRED_ID
-	
+	println env.HUB_ORG
     println '===================================1' 
     println 'KEY IS'
-    println 'SERVER_KEY_CREDENTALS_ID: ' + SF_USERNAME
+    println 'SERVER_KEY_CREDENTALS_ID: ' + SERVER_KEY_CREDENTALS_ID
     println 'SF_USERNAME: '     	 + SF_USERNAME
     println 'SF_CONSUMER_KEY: ' 	 + SF_CONSUMER_KEY
     println '===================================2' 
