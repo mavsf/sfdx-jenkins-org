@@ -7,11 +7,13 @@ node {
     def SERVER_KEY_CREDENTALS_ID=env.SERVER_KEY_CREDENTALS_ID
     def DEPLOYDIR='src'
     def TEST_LEVEL='RunLocalTests'
+	def HUB_ORG=env.HUB_ORG_DH
+	println env.HUB_ORG
 	
     SF_CONSUMER_KEY = env.CONNECTED_APP_CONSUMER_KEY
     SF_USERNAME = env.HUB_ORG
     SERVER_KEY_CREDENTALS_ID = env.JWT_KEY_CRED_ID
-	println env.HUB_ORG
+	
     println '===================================1' 
     println 'KEY IS'
     println 'SERVER_KEY_CREDENTALS_ID: ' + SERVER_KEY_CREDENTALS_ID
