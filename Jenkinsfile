@@ -1,12 +1,6 @@
 #!groovy
 
 node {
- 
-    def HUB_ORG=env.HUB_ORG_DH 
-
-    println '===================================1'  
-    println 'HUB_ORG: '         	   + HUB_ORG 
-    println '===================================2'  
 	
     def SF_CONSUMER_KEY=env.SF_CONSUMER_KEY
     def SF_USERNAME=env.SF_USERNAME
@@ -14,9 +8,9 @@ node {
     def DEPLOYDIR='src'
     def TEST_LEVEL='RunLocalTests' 
 	
-    SF_CONSUMER_KEY = env.CONNECTED_APP_CONSUMER_KEY
+    SF_CONSUMER_KEY = env.CONNECTED_APP_CONSUMER_KEY_DH
     SF_USERNAME = env.HUB_ORG_DH
-    SERVER_KEY_CREDENTALS_ID = env.JWT_KEY_CRED_ID
+    SERVER_KEY_CREDENTALS_ID = env.JWT_CRED_ID_DH
 	
     println '===================================1' 
     println 'KEY IS'
